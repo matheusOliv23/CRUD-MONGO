@@ -35,8 +35,7 @@ export class PostsService {
 
   remove(id: string) {
     return this.postModel.deleteOne({
-    _id: id,
-
-    }).exec()
+      _id: id,
+    });
   }
 }
